@@ -4,4 +4,4 @@
 Chess store landing page
 
 
-Test push // Simon
+Test push // Simon => (Hej Simon! Det verkar funka med collaborator metoden än så länge. Mvh, Jonas) 
