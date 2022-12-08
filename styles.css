@@ -72,6 +72,14 @@ footer {
     justify-content: space-around;
 }
 
+.footerText {
+    margin-left: 1.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
 
 /* section 1 */
 
@@ -124,9 +132,13 @@ footer {
         margin-right: 0;
 
     }
-    footer {justify-content: space-between;
+    .footerText {justify-content: space-between;
             flex-direction: row;
-            align-items: center;}
+            align-items: center;
+            margin-left: 1rem;
+            margin-right: 1rem;}
+
+    footer {height: 7rem;}
   }
 
 
@@ -160,9 +172,12 @@ footer {
     .card h2, .card button {
         margin-left: 1rem;
     }
-footer {justify-content: space-between;
+.footerText {justify-content: space-between;
         flex-direction: row;
-        align-items: center;}
+        align-items: center;
+        margin-left: 4rem;
+        margin-right: 4rem;}
+footer {height: 7rem;}
 
   }
 
