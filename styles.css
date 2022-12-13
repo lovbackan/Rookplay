@@ -1,185 +1,227 @@
 body {
-    color: white;
-    align-content: center;
-    flex-direction: column;
-    font-size: 16px;
-    padding: 0;
-    margin: 0;
+  color: white;
+  align-content: center;
+  flex-direction: column;
+  font-size: 16px;
+  padding: 0;
+  margin: 0;
 }
 
 nav {
-    background-color: black;
-    display: flex;
-    align-items: center;
-    height: 3.75rem;
-    justify-content: space-between;
-    padding-left: 1rem;
-    padding-right: 1rem;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  height: 3.75rem;
+  justify-content: space-between;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 nav p {
-    padding-left: 1.7rem;
-    padding-top: 0.40rem;
-    font-size: 24px;
+  padding-left: 1.7rem;
+  padding-top: 0.4rem;
+  font-size: 24px;
+  color: white;
 }
 
+.desktopNav {
+  display: none;
+}
 
 header {
-    background-color: black;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    flex-direction: column;
-    padding: 0;
-    margin: 0;
+  background-color: black;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
 }
 
 /* main {
-    margin-left: 1rem;
-    margin-right: 1rem;
-} */
+      margin-left: 1rem;
+      margin-right: 1rem;
+  } */
 
-h2, p {
-    padding-left:  1rem;
-    padding-right: 1rem;
-    position: absolute;
+h2,
+p {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  position: absolute;
 }
 
+button.buy,
+button.price {
+  background-color: black;
+  border-radius: 30px;
+  border-color: white;
+  border-width: 1px;
+  border-style: groove;
+  font-family: "interMedium";
+  color: white;
+  align-self: center;
+  position: absolute;
+}
 
+button.buy {
+  height: 3.188rem;
+  width: 6.875rem;
+  margin-right: 12rem;
+  margin-bottom: 13rem;
+}
 
-button {
-    height: 3.188rem;
-    width: 6.875rem ;
-    background-color: black;
-    border-radius: 30px;
-   border-color: white;
-   border-width: 1px;
-   border-style:groove;
-   font-family: 'interMedium';
-   color: white;
-   align-self: center;
-   position: absolute;
+button.price {
+  width: 4.875rem;
+  height: 2.75rem;
+  margin-left: 14rem;
+  margin-bottom: 21.4rem;
+  /* margin-bottom: 98%; */
+  background-color: white;
+  color: black;
 }
 
 footer {
-    margin-top: 1rem;
-    height: 12.5rem;
-    width: 100%;
-    background-color: black;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+  margin-top: 1rem;
+  height: 12.5rem;
+  width: 100%;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-left: 1rem;
 }
-
-.footerText {
-    margin-left: 1.5rem;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    display: flex;
-    flex-direction: column;
-    gap: 0.25rem;
-}
-
 
 /* section 1 */
 
 .heroDesktop {
-    display: none;
+  display: none;
 }
 .hero {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
-
 .hero h2 {
-    margin-top: 5rem;
+  margin-top: 5rem;
 }
 
 .hero p {
-    margin-top: 7.813rem;
-    width: 20.5rem;
+  margin-top: 7.813rem;
+  width: 20.5rem;
 }
 
 .hero button {
-    margin-top: 10.688rem;
+  margin-top: 10.688rem;
+  margin-right: 0rem;
 }
 
 /* section 1 */
 
+#poster button.buy,
+#ticket button.buy {
+  margin-top: 4rem;
+}
+
+.picturesMobile {
+  display: flex;
+  /* width: 90%;
+    height: 90%; */
+}
+
+.picturesDesktop {
+  display: none;
+}
+
 .card {
-    margin-top: 1rem;
-    display: flex;
-    justify-content: center;
-    
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
 }
 
 .card h2 {
-    width: 18.125rem;
-    padding-top: 1rem;
-    
+  width: 18.125rem;
+  padding-top: 1rem;
 }
 
-
+.quote {
+  font-style: italic;
+}
 
 @media screen and (min-width: 640px) {
-    main {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        margin-left: 0;
-        margin-right: 0;
-
-    }
-    .footerText {justify-content: space-between;
-            flex-direction: row;
-            align-items: center;
-            margin-left: 1rem;
-            margin-right: 1rem;}
-
-    footer {height: 7rem;}
+  main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-left: 0;
+    margin-right: 0;
   }
 
+  .hamburgerMenu {
+    display: none;
+  }
+  .desktopNav {
+    display: flex;
+  }
+
+  .footerText {
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  footer {
+    height: 7rem;
+  }
+}
 
 @media screen and (min-width: 1025px) {
-
-    .heroMobile {
-        display: none;
-    }
-
-    .heroDesktop {
-        display: flex;
-        width: 100%;
-    }
-
-    
-    main {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        margin-left: 0;
-        margin-right: 0;
-        gap: 5rem;
-
-    }
-
-    .card {
-        display: flex;
-        justify-content: left;
-    }
-
-    .card h2, .card button {
-        margin-left: 1rem;
-    }
-.footerText {justify-content: space-between;
-        flex-direction: row;
-        align-items: center;
-        margin-left: 4rem;
-        margin-right: 4rem;}
-footer {height: 7rem;}
-
+  .heroMobile {
+    display: none;
   }
 
+  .heroDesktop {
+    display: flex;
+    width: 100%;
+  }
 
+  .picturesMobile {
+    display: none;
+  }
+
+  .picturesDesktop {
+    display: flex;
+  }
+
+  main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-left: 0;
+    margin-right: 0;
+    gap: 5rem;
+  }
+
+  .card {
+    display: flex;
+    justify-content: left;
+  }
+
+  .card h2,
+  .card button {
+    margin-left: 1rem;
+  }
+  .footerText {
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 4rem;
+    margin-right: 4rem;
+  }
+  footer {
+    height: 7rem;
+  }
+}
