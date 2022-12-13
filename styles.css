@@ -89,7 +89,15 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  padding-left: 1rem;
+  /* padding-left: 1rem; */
+}
+
+.footerText {
+  margin-left: 1.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
 }
 
 /* section 1 */
