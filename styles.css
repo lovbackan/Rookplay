@@ -342,38 +342,10 @@ footer {
 }
 
 @media screen and (min-width: 1920px) {
-  .hamburgerMenu {
-    display: none;
-  }
-
-  .about,
-  .tickets,
-  .shop {
-    display: flex;
-    position: absolute;
-    right: 0;
-    align-items: center;
-    padding-top: 0.4rem;
-  }
-
-  .about {
-    padding-right: 5.3rem;
-  }
-
-  .tickets {
-    padding-right: 12.3rem;
-  }
-
-  .shop {
-    padding-right: 17.9rem;
-  }
-
   .hero {
     height: 60.25rem;
   }
-  .heroMobile {
-    display: none;
-  }
+
   .heroSmallDesktop {
     display: none;
   }
@@ -382,10 +354,6 @@ footer {
     width: 100%;
     height: 100%;
     object-fit: cover;
-  }
-
-  .picturesMobile {
-    display: none;
   }
 
   .picturesDesktop {
@@ -409,79 +377,17 @@ footer {
   main {
     display: grid;
     margin-top: 1rem;
-    margin-left: 1rem;
+    margin-left: 2rem;
     margin-right: 1rem;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     grid-template-columns: [first] 301px [line2] 301px [line3] 301px [line4] 301px [line5]301px [line6]301px[end];
 
     grid-template-rows: repeat(3, 1fr);
     gap: 1rem;
   }
 
-  #set {
-    grid-column-start: 1;
-    grid-row-start: 1;
-  }
-
-  #pieces {
-    grid-column-start: 3;
-    grid-row-start: 1;
-  }
-
-  #board {
-    grid-column-start: 5;
-    grid-row-start: 1;
-  }
-  /* #quote,
-  #allProducts,
-  #poster,
-  #ticket {
-    width: 916px;
-    height: 720px;
-  } */
-
-  #quote {
-    grid-column-start: 4;
-    grid-row-start: 2;
-  }
-
   #quote h2 {
     font-size: 35px;
     width: 33rem;
-  }
-
-  #allProducts {
-    grid-column-start: 1;
-    grid-row-start: 2;
-  }
-
-  #poster {
-    grid-column-start: 1;
-    grid-row-start: 3;
-  }
-
-  #ticket {
-    grid-column-start: 4;
-    grid-row-start: 3;
-  }
-
-  .card {
-    display: flex;
-    justify-content: left;
-  }
-
-  .card h2,
-  .card button {
-    margin-left: 1rem;
-  }
-  .footerText {
-    justify-content: space-between;
-    flex-direction: row;
-    align-items: center;
-    margin-left: 4rem;
-    margin-right: 4rem;
-  }
-  footer {
-    height: 7rem;
   }
 }
