@@ -15,8 +15,18 @@
     url(/Fonts/Inter/static/Inter-Medium.ttf) format("truetype");
 }
 
+@font-face {
+  font-family: "robotoLight";
+  src: url(/Fonts/Roboto-Light.ttf);
+}
+
+@font-face {
+  font-family: "robotoThin";
+  src: url(/Fonts/Roboto-Thin.ttf);
+}
+
 h1 {
-  font-family: "interExtraLight";
+  font-family: "robotoThin";
 }
 p {
   font-family: "interExtraLight";
