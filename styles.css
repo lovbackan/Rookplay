@@ -211,6 +211,10 @@ footer {
     display: none;
   }
 
+  .card {
+    margin-top: 0;
+  }
+
   .about,
   .tickets,
   .shop {
@@ -261,11 +265,15 @@ footer {
     justify-content: center;
     display: grid;
 
-    margin-left: 0.5rem;
-    margin-top: 0.5rem;
+    margin-left: 1.4rem;
+    margin-top: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    /* grid-template-columns: [first] 10rem [line2] 10rem [line3] 10rem [line4] 10rem [line5]10rem [line6]10rem[end]; */
     grid-template-columns: [first] 10rem [line2] 10rem [line3] 10rem [line4] 10rem [line5]10rem [line6]10rem[end];
-    grid-template-rows: repeat(320px, auto, auto);
-    gap: 0.5rem;
+    grid-template-rows: repeat(427px, 383px, 383px);
+    row-gap: 1rem;
+    column-gap: 0.5rem;
   }
 
   #set,
@@ -354,7 +362,6 @@ footer {
   }
   footer {
     height: 7rem;
-    margin-top: 2rem;
   }
 }
 
@@ -419,14 +426,19 @@ footer {
   }
   main {
     display: grid;
-    margin-top: 1rem;
+    /* margin-top: 1rem;
     margin-left: 2rem;
     margin-right: 1rem;
-    margin-bottom: 2rem;
+    margin-bottom: 2rem; */
     grid-template-columns: [first] 301px [line2] 301px [line3] 301px [line4] 301px [line5]301px [line6]301px[end];
 
     grid-template-rows: repeat(3, 1fr);
-    gap: 1rem;
+    row-gap: 1rem;
+    column-gap: 0.6rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
   }
   main h2,
   .hero h2 {
