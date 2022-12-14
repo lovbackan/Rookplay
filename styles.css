@@ -83,6 +83,7 @@ button.buy {
   width: 6.875rem;
   margin-right: 12rem;
   margin-bottom: 13rem;
+  cursor: pointer;
 }
 
 button.price {
@@ -259,9 +260,10 @@ footer {
     justify-content: center;
     display: grid;
 
-    /* margin-left: 1rem; */
+    margin-left: 0.5rem;
+    margin-top: 0.5rem;
     grid-template-columns: [first] 10rem [line2] 10rem [line3] 10rem [line4] 10rem [line5]10rem [line6]10rem[end];
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat(320px, auto, auto);
     gap: 0.5rem;
   }
 
@@ -338,6 +340,7 @@ footer {
   }
   footer {
     height: 7rem;
+    margin-top: 2rem;
   }
 }
 
@@ -362,11 +365,7 @@ footer {
 
   #set,
   #pieces,
-  #board {
-    width: auto;
-    height: auto;
-  }
-
+  #board,
   #allProducts,
   #poster,
   #quote,
