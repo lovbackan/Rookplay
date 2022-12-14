@@ -304,7 +304,6 @@ footer {
   }
 
   #quote h2 {
-    font-size: 32px;
     width: 20rem;
   }
 
@@ -388,6 +387,36 @@ footer {
     width: auto;
     height: auto;
   }
+
+  #set button.buy,
+  #pieces button.buy,
+  #board button.buy {
+    margin-bottom: 34rem;
+  }
+
+  #set button.price,
+  #pieces button.price,
+  #board button.price {
+    margin-left: 30.8rem;
+    margin-bottom: 44.4rem;
+  }
+
+  #allProducts button.buy {
+    margin-top: 0rem;
+    margin-bottom: 34rem;
+  }
+
+  #poster button.buy,
+  #ticket button.buy {
+    margin-top: 0rem;
+    margin-bottom: 29rem;
+  }
+
+  #poster button.price,
+  #ticket button.price {
+    margin-left: 50.5rem;
+    margin-bottom: 44.6rem;
+  }
   main {
     display: grid;
     margin-top: 1rem;
@@ -399,9 +428,11 @@ footer {
     grid-template-rows: repeat(3, 1fr);
     gap: 1rem;
   }
-  main h2 {
+  main h2,
+  .hero h2 {
     font-size: 32px;
   }
+
   #quote h2 {
     width: 33rem;
   }
