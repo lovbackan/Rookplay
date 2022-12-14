@@ -12,19 +12,38 @@ nav {
   display: flex;
   align-items: center;
   height: 3.75rem;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   padding-left: 1rem;
   padding-right: 1rem;
 }
 
-nav p {
-  padding-left: 1.7rem;
+nav h1 {
+  padding-left: 1rem;
   padding-top: 0.4rem;
   font-size: 24px;
   color: white;
 }
 
-.desktopNav {
+.navInfo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.hamburgerMenu {
+  position: absolute;
+  right: 0;
+  margin-right: 1rem;
+}
+
+.about {
+  display: none;
+}
+
+.shop {
+  display: none;
+}
+
+.tickets {
   display: none;
 }
 
@@ -76,28 +95,19 @@ button.price {
   color: black;
 }
 
-footer {
-  margin-top: 1rem;
-  height: 12.5rem;
-  width: 100%;
-  background-color: black;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  /* padding-left: 1rem; */
-}
-
-.footerText {
-  margin-left: 1.5rem;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  display: flex;
-  flex-direction: column;
-}
-
 /* section 1 */
+.heroMobile {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
 .heroDesktop {
+  display: none;
+}
+
+.heroSmallDesktop {
   display: none;
 }
 .hero {
@@ -105,6 +115,8 @@ footer {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  background-color: black;
+  height: 36.25rem;
 }
 
 .hero h2 {
@@ -153,19 +165,31 @@ footer {
   font-style: italic;
 }
 
+footer {
+  margin-top: 1rem;
+  height: 12.5rem;
+  width: 100%;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  /* padding-left: 1rem; */
+}
+
+.footerText {
+  margin-left: 1.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
 @media screen and (min-width: 640px) {
   main {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     margin-left: 0;
     margin-right: 0;
-  }
-
-  .hamburgerMenu {
-    display: none;
-  }
-  .desktopNav {
-    display: flex;
   }
 
   .footerText {
@@ -182,6 +206,35 @@ footer {
 }
 
 @media screen and (min-width: 1025px) {
+  .hamburgerMenu {
+    display: none;
+  }
+
+  .about,
+  .tickets,
+  .shop {
+    display: flex;
+    position: absolute;
+    right: 0;
+    align-items: center;
+    padding-top: 0.4rem;
+  }
+
+  .about {
+    padding-right: 5.3rem;
+  }
+
+  .tickets {
+    padding-right: 12.3rem;
+  }
+
+  .shop {
+    padding-right: 17.9rem;
+  }
+
+  .hero {
+    height: 42rem;
+  }
   .heroMobile {
     display: none;
   }
@@ -189,6 +242,8 @@ footer {
   .heroDesktop {
     display: flex;
     width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 
   .picturesMobile {
@@ -201,11 +256,213 @@ footer {
 
   main {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    margin-left: 0;
-    margin-right: 0;
-    gap: 5rem;
+    justify-content: center;
+    display: grid;
+
+    /* margin-left: 1rem; */
+    grid-template-columns: [first] 10rem [line2] 10rem [line3] 10rem [line4] 10rem [line5]10rem [line6]10rem[end];
+    grid-template-rows: repeat(3, 1fr);
+    gap: 0.5rem;
+  }
+
+  #set,
+  #pieces,
+  #board {
+    width: 320px;
+    height: 427px;
+  }
+
+  #allProducts,
+  #poster,
+  #quote,
+  #ticket {
+    width: 489px;
+    height: 383px;
+  }
+
+  #set {
+    grid-column-start: 1;
+    grid-row-start: 1;
+  }
+
+  #pieces {
+    grid-column-start: 3;
+    grid-row-start: 1;
+  }
+
+  #board {
+    grid-column-start: 5;
+    grid-row-start: 1;
+  }
+
+  #quote {
+    grid-column-start: 4;
+    grid-row-start: 2;
+  }
+
+  #quote h2 {
+    font-size: 32px;
+    width: 20rem;
+  }
+
+  #allProducts {
+    grid-column-start: 1;
+    grid-row-start: 2;
+  }
+
+  #poster {
+    grid-column-start: 1;
+    grid-row-start: 3;
+  }
+
+  #ticket {
+    grid-column-start: 4;
+    grid-row-start: 3;
+  }
+
+  .card {
+    display: flex;
+    justify-content: left;
+  }
+
+  .card h2,
+  .card button {
+    margin-left: 1rem;
+  }
+  .footerText {
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 4rem;
+    margin-right: 4rem;
+  }
+  footer {
+    height: 7rem;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .hamburgerMenu {
+    display: none;
+  }
+
+  .about,
+  .tickets,
+  .shop {
+    display: flex;
+    position: absolute;
+    right: 0;
+    align-items: center;
+    padding-top: 0.4rem;
+  }
+
+  .about {
+    padding-right: 5.3rem;
+  }
+
+  .tickets {
+    padding-right: 12.3rem;
+  }
+
+  .shop {
+    padding-right: 17.9rem;
+  }
+
+  .hero {
+    height: 60.25rem;
+  }
+  .heroMobile {
+    display: none;
+  }
+  .heroSmallDesktop {
+    display: none;
+  }
+  .heroDesktop {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .picturesMobile {
+    display: none;
+  }
+
+  .picturesDesktop {
+    display: flex;
+  }
+
+  #set,
+  #pieces,
+  #board {
+    width: auto;
+    height: auto;
+  }
+
+  #allProducts,
+  #poster,
+  #quote,
+  #ticket {
+    width: auto;
+    height: auto;
+  }
+  main {
+    display: grid;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    grid-template-columns: [first] 301px [line2] 301px [line3] 301px [line4] 301px [line5]301px [line6]301px[end];
+
+    grid-template-rows: repeat(3, 1fr);
+    gap: 1rem;
+  }
+
+  #set {
+    grid-column-start: 1;
+    grid-row-start: 1;
+  }
+
+  #pieces {
+    grid-column-start: 3;
+    grid-row-start: 1;
+  }
+
+  #board {
+    grid-column-start: 5;
+    grid-row-start: 1;
+  }
+  /* #quote,
+  #allProducts,
+  #poster,
+  #ticket {
+    width: 916px;
+    height: 720px;
+  } */
+
+  #quote {
+    grid-column-start: 4;
+    grid-row-start: 2;
+  }
+
+  #quote h2 {
+    font-size: 35px;
+    width: 33rem;
+  }
+
+  #allProducts {
+    grid-column-start: 1;
+    grid-row-start: 2;
+  }
+
+  #poster {
+    grid-column-start: 1;
+    grid-row-start: 3;
+  }
+
+  #ticket {
+    grid-column-start: 4;
+    grid-row-start: 3;
   }
 
   .card {
