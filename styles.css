@@ -357,6 +357,10 @@ footer {
     margin-left: 1rem;
   }
 
+  .hero button {
+    margin-left: 0rem;
+  }
+
   .footerText {
     justify-content: space-between;
     flex-direction: row;
