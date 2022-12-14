@@ -219,6 +219,7 @@ footer {
     right: 0;
     align-items: center;
     padding-top: 0.4rem;
+    cursor: pointer;
   }
 
   .about {
@@ -312,11 +313,24 @@ footer {
     grid-row-start: 2;
   }
 
+  #allProducts button.buy {
+    margin-top: 3rem;
+  }
+
   #poster {
     grid-column-start: 1;
     grid-row-start: 3;
   }
 
+  #poster button.buy,
+  #ticket button.buy {
+    margin-top: 7rem;
+  }
+  #ticket button.price,
+  #poster button.price {
+    margin-left: 24.5rem;
+    margin-bottom: 18.4rem;
+  }
   #ticket {
     grid-column-start: 4;
     grid-row-start: 3;
@@ -328,9 +342,10 @@ footer {
   }
 
   .card h2,
-  .card button {
+  button.buy {
     margin-left: 1rem;
   }
+
   .footerText {
     justify-content: space-between;
     flex-direction: row;
@@ -384,9 +399,10 @@ footer {
     grid-template-rows: repeat(3, 1fr);
     gap: 1rem;
   }
-
+  main h2 {
+    font-size: 32px;
+  }
   #quote h2 {
-    font-size: 35px;
     width: 33rem;
   }
 }
