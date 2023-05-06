@@ -24,10 +24,11 @@ nav h1 {
   color: white;
 }
 
-.navInfo {
+.title {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  cursor: pointer;
 }
 .hamburgerMenu {
   position: absolute;
@@ -238,9 +239,126 @@ footer {
 }
 
 @media screen and (min-width: 1025px) {
+  nav {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    height: 3.75rem;
+    flex-direction: row;
+    margin-right: 0;
+    padding: 0;
+  }
+
   nav h1 {
     font-size: 30px;
     padding-top: 0.3rem;
+    color: white;
+    padding-left: 0;
+  }
+
+  nav h2 {
+    color: white;
+  }
+
+  .logo {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    cursor: pointer;
+  }
+  .navLinks {
+    display: flex;
+    flex-direction: row;
+    right: 0;
+    position: absolute;
+    width: 263px;
+    height: 3.75rem;
+    margin-right: 2rem;
+  }
+  .about {
+    width: 66.07px;
+  }
+  .tickets {
+    width: 79.5px;
+    padding-left: 6rem;
+  }
+
+  .shop {
+    width: 56.94px;
+    padding-left: 7rem;
+  }
+
+  .about,
+  .tickets,
+  .shop,
+  .contacts,
+  .shippings,
+  .terms,
+  .refunds {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    width: auto;
+  }
+
+  .about::after,
+  .tickets::after,
+  .shop::after,
+  .contacts::after,
+  .shippings::after,
+  .terms::after,
+  .refunds::after {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 2px;
+    margin-top: 2.5rem;
+    background: white;
+    transition: transform 0.4s ease-in-out;
+    transform: scale(0);
+  }
+
+  .about::after {
+    width: 66.07px;
+  }
+  .tickets::after {
+    width: 79.5px;
+  }
+  .shop::after {
+    width: 56.94px;
+  }
+  .title::after {
+    width: 128.34px;
+  }
+
+  .contacts::after {
+    width: 100.47px;
+  }
+
+  .shippings::after {
+    width: 95.95px;
+  }
+
+  .terms::after {
+    width: 186.06px;
+  }
+
+  .refunds::after {
+    width: 91px;
+  }
+
+  .about:hover::after,
+  .tickets:hover::after,
+  .shop:hover::after,
+  .contacts:hover::after,
+  .shippings:hover::after,
+  .terms:hover::after,
+  .refunds:hover::after {
+    transform: scale(1);
+  }
+
+  .buy:hover {
+    color: black;
+    background-color: white;
   }
 
   #ticketPictureDesktop {
@@ -253,30 +371,6 @@ footer {
   .card {
     margin-top: 0;
   }
-
-  .about,
-  .tickets,
-  .shop {
-    display: flex;
-    position: absolute;
-    right: 0;
-    align-items: center;
-    padding-top: 0.4rem;
-    cursor: pointer;
-  }
-
-  .about {
-    padding-right: 5.3rem;
-  }
-
-  .tickets {
-    padding-right: 12.3rem;
-  }
-
-  .shop {
-    padding-right: 17.9rem;
-  }
-
   .hero {
     height: 42rem;
   }
